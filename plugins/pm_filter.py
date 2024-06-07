@@ -674,14 +674,15 @@ async def auto_filter(client, msg, spoll=False):
 
     btn.insert(0,
         [
-            InlineKeyboardButton("Update Channel", url="https://t.me/VJ_Botz"),
-        ]
-    )
-    btn.insert(1,
-        [
-            InlineKeyboardButton("YouTube Channel", url="https://youtube.com/@Tech_VJ"),
-        ]
-    )
+                InlineKeyboardButton('💠 GᏒԾUᎮ 💠', url='https://t.me/CiNeMaL0KaM_GrOuP'),
+                InlineKeyboardButton('💠 CHΛИИΞL 💠', url='https://t.me/CiNeMaLoKaM_MoVieS')
+            ]
+        )
+        btn.insert(1,
+           [
+               InlineKeyboardButton('✇ Jᴏɪɴ Uᴘᴅᴀᴛᴇs Cʜᴀɴɴᴇʟ ✇', url='https://t.me/+P2f6u3QOlrVmZThl')
+            ]
+        )
 
     if offset != "":
         key = f"{message.chat.id}-{message.id}"

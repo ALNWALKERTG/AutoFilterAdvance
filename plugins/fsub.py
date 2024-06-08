@@ -1,7 +1,3 @@
-#!/usr/bin/env python3
-# -*- coding: utf-8 -*-
-# (c) @AlbertEinsteinTG
-
 import asyncio
 from pyrogram import Client, enums
 from pyrogram.errors import FloodWait, UserNotParticipant
@@ -108,6 +104,9 @@ async def ForceSub(bot: Client, update: Message, file_id: str = False, mode="che
             ],
             [
                 InlineKeyboardButton(" 🔄 Try Again 🔄 ", callback_data=f"{mode}#{file_id}")
+            ],
+            [   InlineKeyboardButton("Update", url="https://t.me/VJ_Botz"),
+                InlineKeyboardButton("GROUP", url="https://t.me/+P2f6u3QOlrVmZThl")
             ]
         ]
         
@@ -141,4 +140,3 @@ async def ForceSub(bot: Client, update: Message, file_id: str = False, mode="che
 def set_global_invite(url: str):
     global INVITE_LINK
     INVITE_LINK = url
-

@@ -31,15 +31,15 @@ auth_grp = environ.get('AUTH_GROUP')
 AUTH_GROUPS = [int(ch) for ch in auth_grp.split()] if auth_grp else None
 
 # MongoDB information
-DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://alanwalker:alanwalker@cluster0.kcqso5a.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
-DATABASE_NAME = environ.get('DATABASE_NAME', "alanwalker")
+DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://rocky:rocky@cluster0.h0fvqhu.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
+DATABASE_NAME = environ.get('DATABASE_NAME', "rocky")
 COLLECTION_NAME = environ.get('COLLECTION_NAME', 'techvjcollection')
 
 # FSUB
-auth_channel = environ.get('AUTH_CHANNEL', '-1002003139040')
+auth_channel = environ.get('AUTH_CHANNEL', '-1002199952015')
 AUTH_CHANNEL = int(auth_channel) if auth_channel and id_pattern.search(auth_channel) else None
 # Set to False inside the bracket if you don't want to use Request Channel else set it to Channel ID
-REQ_CHANNEL = environ.get("REQ_CHANNEL", '-1002003139040')
+REQ_CHANNEL = environ.get("REQ_CHANNEL", '-1002199952015')
 REQ_CHANNEL = int(REQ_CHANNEL) if REQ_CHANNEL and id_pattern.search(REQ_CHANNEL)  else None
 JOIN_REQS_DB = environ.get("JOIN_REQS_DB", DATABASE_URI)
 
@@ -49,7 +49,7 @@ SUPPORT_CHAT = environ.get('SUPPORT_CHAT', 'CiNeMaL0KaM_GrOuP')
 P_TTI_SHOW_OFF = is_enabled((environ.get('P_TTI_SHOW_OFF', "True")), False)
 IMDB = is_enabled((environ.get('IMDB', "False")), True)
 SINGLE_BUTTON = is_enabled((environ.get('SINGLE_BUTTON', "True")), False)
-CUSTOM_FILE_CAPTION = environ.get("CUSTOM_FILE_CAPTION", """<b>ɴᴀᴍᴇ: <code>{file_name}</code> \n\nJᴏɪɴ Nᴏᴡ: [⚡NEW MOVIES⚡](https://t.me/+P2f6u3QOlrVmZThl)</b>""")
+CUSTOM_FILE_CAPTION = environ.get("CUSTOM_FILE_CAPTION","""<b>ɴᴀᴍᴇ: <code>{file_name}</code> \n\n╔═══ ᴊᴏɪɴ ᴡɪᴛʜ ᴜs ═══╗\n➲ @CinemaLokham_Groups\n➲ @Cinemalokam_Movies\n╚═══ ᴊᴏɪɴ ᴡɪᴛʜ ᴜs ═══╝</b>""")
 BATCH_FILE_CAPTION = environ.get("BATCH_FILE_CAPTION", CUSTOM_FILE_CAPTION)
 IMDB_TEMPLATE = environ.get("IMDB_TEMPLATE", "<b>Query: {query}</b> \n‌‌‌‌IMDb Data:\n\n🏷 Title: <a href={url}>{title}</a>\n🎭 Genres: {genres}\n📆 Year: <a href={url}/releaseinfo>{year}</a>\n🌟 Rating: <a href={url}/ratings>{rating}</a> / 10")
 LONG_IMDB_DESCRIPTION = is_enabled(environ.get("LONG_IMDB_DESCRIPTION", "False"), False)
